@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "test1",
+      "setup": "rm a.out; g++ *.cpp -o a.out;",
+      "run": "./a.out",
+      "input": "7 7\r\n4 1 2 8 6 3 5\r\n1 7\r\n2 0 5\r\n3 1\r\n4\r\n5\r\n7\r\n6",
+      "output": "5 \r\n6 \r\n5 5 4 3 2 1 \r\n",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}

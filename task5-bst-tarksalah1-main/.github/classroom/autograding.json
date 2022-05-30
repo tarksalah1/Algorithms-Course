@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "bst1_constructor",
+      "setup": "rm a.out; g++ my_tree.cpp -o a.out",
+      "run": "./a.out",
+      "input": "3 3\r\n2 3 1\r\n1 4\r\n7\r\n3 1",
+      "output": "4 \r\n1 2 3 4 \r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "bst2_traversal",
+      "setup": "rm a.out; g++ my_tree.cpp -o a.out",
+      "run": "./a.out",
+      "input": "7 8\r\n6 7 3 4 2 1 5\r\n3 1\r\n3 2\r\n4 1\r\n4 1\r\n5 1\r\n5 3\r\n6\r\n7",
+      "output": "1 2 3 4 5 6 7 \r\n1 2 3 4 5 6 7 \r\n4 3 2 1 6 5 7 \r\n4 3 2 1 6 5 7 \r\n1 2 3 5 7 6 4 \r\n1 2 3 5 7 6 4 \r\n4 3 6 2 5 7 1 \r\n7 \r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "bst3_add_nodes",
+      "setup": "rm a.out; g++ my_tree.cpp -o a.out",
+      "run": "./a.out",
+      "input": "3 8\r\n8 6 1\r\n1 0\r\n1 7\r\n1 3\r\n1 9\r\n3 2\r\n5 2\r\n2 8\r\n2 11",
+      "output": "0 1 3 6 7 8 9 \r\n0 3 1 7 9 8 6 \r\n1 \r\n0 \r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}

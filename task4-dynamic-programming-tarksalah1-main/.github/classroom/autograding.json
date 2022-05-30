@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "lis1",
+      "setup": "rm a.out; g++ lis.cpp -o a.out",
+      "run": "./a.out",
+      "input": "7\r\n0 3 1 6 2 2 7",
+      "output": "4",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "lis2",
+      "setup": "rm a.out; g++ lis.cpp -o a.out",
+      "run": "./a.out",
+      "input": "5\r\n7 7 7 7 7",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "kn_wor1",
+      "setup": "rm a.out; g++ kn_wor.cpp -o a.out",
+      "run": "./a.out",
+      "input": "4 10\r\n6 3 4 2\r\n30 14 16 9",
+      "output": "46",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "kn_wr1",
+      "setup": "rm a.out; g++ kn_wr.cpp -o a.out",
+      "run": "./a.out",
+      "input": "4 10\r\n6 3 4 2\r\n30 14 16 9",
+      "output": "48",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "lis3",
+      "setup": "rm a.out; g++ lis.cpp -o a.out",
+      "run": "./a.out",
+      "input": "7\r\n2 3 0 1 2 2 4",
+      "output": "4",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
